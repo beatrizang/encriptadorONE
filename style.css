@@ -539,7 +539,7 @@ s
 }
 
 /******************** RESPONSIVE PARA CELULAR ***************/
-@media screen and (max-width: 520px){
+@media screen and (max-width: 500px){
 
     body{
         width: 375px;
