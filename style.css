@@ -1,0 +1,677 @@
+:root{
+    --light-blue: #F3F5FC;
+    --dark-blue: #0A3871;
+    --light-gray: #D8DFE8;
+    --gray-500: #343A40;
+    --gray-400: #495057;
+    --white: #FFFFFF;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+a{
+    color: var(--dark-blue);
+}
+
+a:hover{
+    transition: .8s ease;
+    color: var(--gray-500);
+    text-decoration: none;
+}
+
+/* barra de desplazamiento*/
+body::-webkit-scrollbar {
+    width: 8px;     
+    height: 8px;     
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: var(--celeste);    
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: var(--dark-blue);   
+    border-radius: 20px;     
+    border: 3px solid var(--dark-blue);  
+  }
+
+body{
+    position: relative;
+    width: 1440px;
+    height: 1024px;
+    background: var(--light-blue);
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 40px;
+    position: absolute;
+    width: 120px;
+    height: 48px;
+    left: 40px;
+    top: 40px;
+}
+
+#logo{
+    position: absolute;
+    left: 36.67%;
+    right: 37.43%;
+    top: 0%;
+    bottom: 0%;
+}
+
+#ingreso{
+    position: absolute;
+    width: 577px;
+    height: 48px;
+    left: 240px;
+    top: 168px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+
+    color: var(--dark-blue);
+
+    border: none;
+    background-color: var(--light-blue);
+}
+
+
+
+Input::placeholder{
+    color: var(--dark-blue);
+}
+
+.indicacion{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 8px;
+
+    position: absolute;
+    width: 229px;
+    height: 18px;
+    left: 240px;
+    top: 851px;
+}
+
+.indicacion p{
+    width: 205px;
+    height: 18px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+
+    color: var(--gray-400);
+
+    opacity: 0.8;
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.exclamacion{
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+    color: var(--gray-400);
+    
+}
+
+.botones{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 24px;
+
+    position: absolute;
+    width: 680px;
+    height: 67px;
+    left: 240px;
+    top: 885px;
+}
+
+.btn-encriptar{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 24px;
+    gap: 8px;
+
+    width: 328px;
+    height: 67px;
+
+    /* Dark blue/dark-blue-300 */
+
+    background: var(--dark-blue);
+    border-radius: 24px;
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.btn-encriptar p{
+    /* Button */
+
+    width: 280px;
+    height: 19px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+
+    /* White */
+
+    color: var(--white);
+
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 1;
+}
+
+.btn-desencriptar{
+    box-sizing: border-box;
+
+    /* Auto layout */
+
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 24px;
+    gap: 8px;
+
+    width: 328px;
+    height: 67px;
+
+    /* Light gray */
+
+    background-color: var(--light-gray);
+    /* Dark blue/dark-blue-300 */
+
+    border: 1px solid var(--dark-blue);
+    border-radius: 24px;
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.btn-desencriptar p{
+    width: 280px;
+    height: 19px;
+    
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    
+    /* Dark blue/dark-blue-300 */
+    
+    color: #0A3871;
+    
+    
+    /* Inside auto layout */
+    
+    flex: none;
+    order: 0;
+    flex-grow: 1;
+}
+
+.btn-encriptar,.btn-desencriptar:hover{
+    cursor: pointer;
+}
+
+.derecha{
+    position: absolute;
+    width: 400px;
+    height: 944px;
+    left: 1000px;
+    top: 40px;
+
+    /* White */
+
+    background-color: var(--white);
+    /* shadow */
+
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    border-radius: 32px;
+}
+
+.munieco{
+    position: absolute;
+    width: 336px;
+    height: 304px;
+    left: 30px;
+    top: 283px;
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 16px;
+
+    position: absolute;
+    width: 336px;
+    height: 122px;
+    left: 30px;
+    top: 619px;
+}
+
+.info h2{
+    width: 336px;
+    height: 58px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 120%;
+
+    text-align: center;
+
+    color: var(--gray-500);
+
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+.info p{
+    width: 336px;
+    height: 48px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+
+
+    text-align: center;
+
+    color: var(--gray-400);
+
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+#textoIngresado{
+    position: absolute;
+    width: 336px;
+    height: 700px;
+    left: 30px;
+    top: 72px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 150%;
+    border: none;
+    display: none;
+    resize: none;
+    color: var(--gray-400);
+    background-color: var(--white);
+}
+
+.copiar{
+    box-sizing: border-box;
+
+    /* Auto layout */
+
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 24px;
+    gap: 8px;
+
+    position: absolute;
+    width: 336px;
+    height: 67px;
+    left: 30px;
+    top: 845px;
+
+    /* Dark blue/dark-blue-300 */
+
+    border: 1px solid var(--dark-blue);
+    border-radius: 24px;
+
+    display: none;
+}
+
+.copiar p{
+    
+    width: 288px;
+    height: 19px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+
+    color: var(--dark-blue);
+
+
+    flex: none;
+    order: 0;
+    flex-grow: 1;
+}
+
+.copiar:hover{
+    cursor: pointer;
+}
+
+footer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 24px;
+
+    position: absolute;
+    width: 680px;
+    height: 67px;
+    left: 270px;
+    top: 1020px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 150%;
+    color: var(--dark-blue);
+
+    align-items: center;
+    justify-content: center;
+}
+
+/******************** RESPONSIVE PARA TABLET ***************/
+@media screen and (max-width: 768px){
+    body{
+        width: 768px;
+        height: 1174px;
+    }
+
+    header{
+        position: absolute;
+        width: 31.09px;
+        height: 50.58px;
+        left: 40px;
+        top: 73.42px;
+    }
+s
+    #ingreso{
+        width: 688px;
+        left: 40px;
+        top: 240px;
+    }
+
+    .indicacion{
+        left: 40px;
+        top: 836px;
+    }
+
+    .botones{
+        width: 688px;
+        left: 40px;
+        top: 870px;
+    }
+
+    .btn-encriptar{
+        width: 332px;
+        flex-grow: 1;
+    }
+
+    .btn-encriptar p{
+        width: 284px;
+    }
+
+    .btn-desencriptar{
+        width: 332px;
+        flex-grow: 1;
+    }
+    
+    .btn-desencriptar p{    
+        width: 284px;
+    }
+
+    .derecha{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 32px;
+        gap: 32px;
+        width: 688px;
+        height: 350px;
+        left: 40px;
+        top: 1001px;
+    }
+    .info{
+        width: 624px;
+        height: 69px;
+        flex: none;
+        order: 0;
+        align-self: stretch;
+        flex-grow: 0;
+        top: 150px;
+    }
+
+    .info h2{
+        width: 624px;
+        height: 29px;
+    }
+    
+    .info p{
+        width: 624px;
+        height: 24px;
+    }
+
+    .munieco{
+        display: none;
+        visibility: hidden;
+    }
+
+    #textoIngresado{
+        width: 624px;
+        height: 180px;
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+        top: 30px;
+    }
+
+    .copiar{
+        width: 624px;
+        flex: none;
+        order: 1;
+        align-self: stretch;
+        flex-grow: 0;
+        top: 250px;
+    }
+    
+    .copiar p{
+        width: 576px;
+    }
+
+    footer{
+        width: 688px;
+        left: 60px;
+        top: 1390px;
+        text-align: center;
+    }
+}
+
+/******************** RESPONSIVE PARA CELULAR ***************/
+@media screen and (max-width: 520px){
+
+    body{
+        width: 375px;
+        height: 933px;
+    }
+
+    header{
+		width: 375px;
+		height: 96px;
+		left: 0px;
+		top: 0px;
+    }
+
+	#logo{
+		left: 4.27%;
+		right: 87.2%;
+		top: 25%;
+		bottom: 25%;
+	}
+
+	#ingreso{
+		width: 343px;
+		height: 48px;
+		left: 16px;
+		top: 152px;
+	}
+
+	.indicacion{
+		left: 16px;
+		top: 451px;
+	}
+
+	.botones{
+		flex-direction: column;
+		position: relative;
+		width: 343px;
+		height: 158px;
+		left: 16px;
+		top: 485px;
+	}
+	
+	.btn-encriptar{
+		width: 343px;
+		align-self: stretch;
+	}
+	
+	.btn-encriptar p{
+		width: 295px;
+	}
+	
+	.btn-desencriptar{
+		width: 343px;
+		align-self: stretch;
+	}
+	
+	.btn-desencriptar p{
+		width: 295px;
+	}
+
+	.derecha{
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		padding: 32px;
+		gap: 32px;
+		width: 343px;
+		height: 495px;
+		left: 16px;
+		top: 700px;
+	}
+
+	.info{
+		width: 263px;
+		height: 122px;
+		flex: none;
+		order: 0;
+		align-self: stretch;
+		flex-grow: 0;
+		top: 200;
+	}
+	
+	.info h2{
+		width: 263px;
+	}
+	
+	.info p{
+		width: 263px;
+	}
+
+	.munieco{
+        display: none;
+        visibility: hidden;
+    }
+	
+	#textoIngresado{
+		width: 279px;
+		height: 332px;
+		flex: none;
+		order: 0;
+		align-self: stretch;
+		flex-grow: 0;
+        top: 30px;
+	}
+	
+    .copiar{
+        width: 279px;
+        height: 67px;
+        flex: none;
+        order: 1;
+        align-self: stretch;
+        flex-grow: 0;
+        top: 400px;
+    }
+
+    .copiar p{
+        width: 231px;
+    }
+
+    footer{
+        width: 279px;
+        height: 67px;
+        flex: none;
+        order: 1;
+        align-self: stretch;
+        flex-grow: 0;
+        top: 1250px;
+        left: 36px;
+        text-align: center;
+    }
+
+
+	
+
+
+}
